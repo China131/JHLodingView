@@ -15,6 +15,9 @@
 		E9A18A431D2646B20024E00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A18A411D2646B20024E00D /* LaunchScreen.storyboard */; };
 		E9A18A4E1D2646B20024E00D /* JHLodingViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18A4D1D2646B20024E00D /* JHLodingViewDemoTests.m */; };
 		E9A18A591D2646B20024E00D /* JHLodingViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18A581D2646B20024E00D /* JHLodingViewDemoUITests.m */; };
+		E9A18A691D2646FC0024E00D /* JHLoadingProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18A681D2646FC0024E00D /* JHLoadingProgress.m */; };
+		E9A18A6C1D26477E0024E00D /* JHBookPageLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18A6B1D26477E0024E00D /* JHBookPageLoading.m */; };
+		E9A18A6E1D264EF20024E00D /* 81134BDA1AE126BF4C06F0D6F8376087.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9A18A6D1D264EF20024E00D /* 81134BDA1AE126BF4C06F0D6F8376087.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		E9A18A541D2646B20024E00D /* JHLodingViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHLodingViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A18A581D2646B20024E00D /* JHLodingViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHLodingViewDemoUITests.m; sourceTree = "<group>"; };
 		E9A18A5A1D2646B20024E00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A18A671D2646FC0024E00D /* JHLoadingProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLoadingProgress.h; sourceTree = "<group>"; };
+		E9A18A681D2646FC0024E00D /* JHLoadingProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLoadingProgress.m; sourceTree = "<group>"; };
+		E9A18A6A1D26477E0024E00D /* JHBookPageLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBookPageLoading.h; sourceTree = "<group>"; };
+		E9A18A6B1D26477E0024E00D /* JHBookPageLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBookPageLoading.m; sourceTree = "<group>"; };
+		E9A18A6D1D264EF20024E00D /* 81134BDA1AE126BF4C06F0D6F8376087.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 81134BDA1AE126BF4C06F0D6F8376087.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		E9A18A321D2646B20024E00D /* JHLodingViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9A18A661D2646E30024E00D /* JHLoadingView */,
 				E9A18A361D2646B20024E00D /* AppDelegate.h */,
 				E9A18A371D2646B20024E00D /* AppDelegate.m */,
 				E9A18A391D2646B20024E00D /* ViewController.h */,
@@ -138,6 +147,18 @@
 				E9A18A5A1D2646B20024E00D /* Info.plist */,
 			);
 			path = JHLodingViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		E9A18A661D2646E30024E00D /* JHLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				E9A18A6D1D264EF20024E00D /* 81134BDA1AE126BF4C06F0D6F8376087.jpg */,
+				E9A18A671D2646FC0024E00D /* JHLoadingProgress.h */,
+				E9A18A681D2646FC0024E00D /* JHLoadingProgress.m */,
+				E9A18A6A1D26477E0024E00D /* JHBookPageLoading.h */,
+				E9A18A6B1D26477E0024E00D /* JHBookPageLoading.m */,
+			);
+			path = JHLoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A18A431D2646B20024E00D /* LaunchScreen.storyboard in Resources */,
+				E9A18A6E1D264EF20024E00D /* 81134BDA1AE126BF4C06F0D6F8376087.jpg in Resources */,
 				E9A18A401D2646B20024E00D /* Assets.xcassets in Resources */,
 				E9A18A3E1D2646B20024E00D /* Main.storyboard in Resources */,
 			);
@@ -270,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A18A6C1D26477E0024E00D /* JHBookPageLoading.m in Sources */,
 				E9A18A3B1D2646B20024E00D /* ViewController.m in Sources */,
 				E9A18A381D2646B20024E00D /* AppDelegate.m in Sources */,
 				E9A18A351D2646B20024E00D /* main.m in Sources */,
+				E9A18A691D2646FC0024E00D /* JHLoadingProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

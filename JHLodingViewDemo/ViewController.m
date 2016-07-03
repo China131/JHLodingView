@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "JHBookPageLoading.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor darkGrayColor];
+    JHBookPageLoading *book = [[JHBookPageLoading alloc] init];
+    book.frame = self.view.bounds;
+    
+    [self.view addSubview:book];
+    
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
